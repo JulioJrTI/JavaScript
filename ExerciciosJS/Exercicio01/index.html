@@ -11,14 +11,43 @@
     <main>
         <h1>Desafio 01: <br>Crie um programa que escreva "Olá, Mundo!" na tela.</h1>
         <h2>
-        <script>            
-            //Solicitando o nome da pessoa pelo Prompt
-            var nomePessoa = prompt('Digite seu nome: ')
-            
-            //Imprindo uma mensagem na pagina junto ao nome da pessoa digitada acima
-            document.write(`Hello ${nomePessoa}! Bem vindo(a) ao JavaScript!`)
-        </script>
+            <!-- Solicitando o nome da pessoa em uma caixa de texto -->
+            Digite seu nome: 
+            <input type="text" name="nomePessoa" id="nomePessoa">
+
+            <!-- Criando um botão de confirmação e execução de uma função ao clicarmos -->
+            <input type="button" value="OK" onmousedown="exibirMSG()">
+
+            <!-- Limpando mensagem e caixa de texto -->
+            <input type="button" value="LIMPAR" onmousedown="limparMSG()">
         </h2>
+
+        <!-- Tag que irá conter uma mensagem -->
+        <h3 id="resposta"></h3>
+
+        <script>        
+        // Variavel irá receber o conteudo inserido na caixa de texto acima
+        var nomePessoa = document.getElementById('nomePessoa')
+
+        // Variavel irá conter a resposta a ser inserida no tag 'h3'
+        var resposta = document.getElementById('resposta')
+        
+        // Função que irá exibir uma mensagem ao clicarmos no botão de OK
+        function exibirMSG(){
+            
+            // Capturando conteudo da variavel de caixa de texto
+            nome = nomePessoa.value
+
+            //Inserido texto a variavel referente a tag 'h3'
+            resposta.innerHTML = `Olá <strong>${nome}</strong>, Bem vindo(a) ao JavaScript!`
+        }
+        
+        // Limpando mensagem abaixo da caixa de texto
+        function limparMSG(){
+            resposta.innerHTML = null
+        }
+        </script>
+        
     </main> 
 </body>
 </html>

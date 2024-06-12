@@ -22,7 +22,7 @@ main{
     border-radius: 10px;
 }
 
-p{
+p,h3{
     text-align: center;
     color: white;
 }
