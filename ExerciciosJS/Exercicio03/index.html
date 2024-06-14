@@ -12,20 +12,37 @@
         <h1>Desafio 03: <br>Crie um programa que leia dois números e mostre a soma entre eles.</h1>
 
         <p>
-        <script>
-            //Solicitando dois numeros
-            var n1 = parseInt(prompt("Digite o primeiro numero: "))
-            var n2 = parseInt(prompt("Digite o segundo numero: "))
+            <!-- Solicitando dois numeros atraves de caixas de texto -->  
+            <input type="number" name="numero01" id="numero01">
+            +
+            <input type="number" name="numero02" id="numero02">           
 
-            //Efetuando a soma dos numeros acima e armazendo o resultado em uma variavel
-            var soma = (n1+n2)
-
-            //Imprimindo o resultado da soma acima no documento HTML
-            document.write(`A soma dos numeros ${n1} e ${n2} é igual a ${soma}!`)
-        </script>
-        </p>
-
+            <input type="button" value="OK" onclick="Calcular()"> 
+            
+            <h2 id="resultado"></h3>
         
+            <script>
+                
+                // Função que irá calcular dois valores inseridos em caixas de texto
+                function Calcular(){
+                    
+                    // Pegandos os valores inseridos nas caixas de texto
+                    var n1 = Number(document.getElementById('numero01').value)
+                    var n2 = Number(document.getElementById('numero02').value)
+
+                    // Variavel irá receber o resultado da soma
+                    var resultado = document.getElementById('resultado')
+
+                    // Somandos os numeros
+                    var soma = n1+n2
+                    
+                    // Anexando o resultado a um campo de tag 'h3' e modificando a aparencia
+                    resultado.style.color = 'red'
+                    resultado.style.background = 'black'
+                    resultado.innerHTML = `${soma}`
+                }
+            </script>
+        </p>        
     </main>
 </body>
 </html>
