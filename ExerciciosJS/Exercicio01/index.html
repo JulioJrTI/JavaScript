@@ -25,27 +25,28 @@
         <!-- Tag que irá conter uma mensagem -->
         <h3 id="resposta"></h3>
 
-        <script>        
-        // Variavel irá receber o conteudo inserido na caixa de texto acima
-        var nomePessoa = document.getElementById('nomePessoa')
+        <script>
 
-        // Variavel irá conter a resposta a ser inserida no tag 'h3'
-        var resposta = document.getElementById('resposta')
-        
-        // Função que irá exibir uma mensagem ao clicarmos no botão de OK
-        function exibirMSG(){
+            // Variavel irá conter a resposta a ser inserida no tag 'h3'
+            var resposta = document.getElementById('resposta')
             
-            // Capturando conteudo da variavel de caixa de texto
-            nome = nomePessoa.value
+            // Função que irá exibir uma mensagem ao clicarmos no botão de OK
+            function exibirMSG(){
+                
+                // Variavel irá receber o conteudo inserido na caixa de texto acima
+                var nomePessoa = document.getElementById('nomePessoa').value
+                
+                // Capturando conteudo da variavel de caixa de texto
+                //nome = nomePessoa.value
 
-            //Inserido texto a variavel referente a tag 'h3'
-            resposta.innerHTML = `Olá <strong>${nome}</strong>, Bem vindo(a) ao JavaScript!`
-        }
-        
-        // Limpando mensagem abaixo da caixa de texto
-        function limparMSG(){
-            resposta.innerHTML = null
-        }
+                //Inserido texto a variavel referente a tag 'h3'
+                resposta.innerHTML = `Olá <strong>${nomePessoa}</strong>, Bem vindo(a) ao JavaScript!`
+            }
+            
+            // Limpando mensagem abaixo da caixa de texto
+            function limparMSG(){
+                resposta.innerHTML = null
+            }
         </script>
         
     </main> 
