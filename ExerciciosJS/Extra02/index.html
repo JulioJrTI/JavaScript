@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculador de Idade</title>
+</head>
+<body onload="">
+    <h3>(Extra) Extra 02: Crie um site que identifique a idade do usuário ao digitar o ano de nascimento, tenhamos um radio button de sexo e mostre uma imagem (cosmética) da pessoa criança, jovem, adulto e idoso.</h3>
+
+    <h1 id="titulo">Calculador de Idade</h1>
+
+    <section>
+        <div>
+            Ano de Nascimento: 
+            <input type="number" name="anoNascimento" id="anoNascimento">
+        </div>
+
+        <div>
+            Sexo: 
+            <input type="radio" name="sexo" id="sexoM" checked> Masculino
+            <input type="radio" name="sexo" id="sexoF"> Feminino
+        </div>
+
+        <div>
+            <input type="button" value="Verificar" onclick="calcularIdade()">
+        </div>
+
+        <div id="msg">
+            
+        </div>
+
+        <div id="img">            
+            <img id="foto" src="imagens/sex.png" alt="Imagem">
+        </div>
+    </section>
+
+    <footer>
+        <h1>&copy; Alexa Luzia</h1>
+    </footer>
+    
+</body>
+</html>
