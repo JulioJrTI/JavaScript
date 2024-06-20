@@ -1,0 +1,31 @@
+#ex{
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+}
+
+h1,footer{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#msg{
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgba(0, 136, 255, 0.424);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.450);
+}
+
+section{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.450);
+}
+
