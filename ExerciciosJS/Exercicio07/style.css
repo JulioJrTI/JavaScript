@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#ex,footer{
+    text-align: center;
+}
+
+body{
+    background-color: #398E62;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.500);
+    color: white;
+}
+
+section{
+    background-color: #00B257;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    border-radius: 90px;
+    padding: 1px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.500);
+}
+
+#res{
+    color: black;
+    font-weight: bolder;
+}
