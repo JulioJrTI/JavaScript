@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#ex,footer{
+    text-align: center;
+}
+
+body{
+    background-color: #F3C0F1;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#resp{
+    border: 5px solid #F3C0F1;
+    width: 425px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section{
+    background-color: #B256D4;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    border-radius: 70px;
+    padding: 1px;
+}
