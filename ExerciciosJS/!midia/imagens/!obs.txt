@@ -1,0 +1,1 @@
+Tamanho otimo para imagens pequenas: 250x250px
